@@ -74,6 +74,7 @@ body {
 	background-color: #000;
 	color: #FFF;
 	height: 25px;
+	clear: both;
 }
 #footer h6 {
 	font-size: 12px;
@@ -86,6 +87,27 @@ body {
     background-color: bisque;
 }
 
+ .img-right{
+	float: right;
+ }
 h2,h3,h4{
     color:aquamarine;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
