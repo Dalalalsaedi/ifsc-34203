@@ -21,14 +21,20 @@ html {
 
 main {
 background-image: url("https://assets.codepen.io/7248/grid-1.png");
-width:80vw;
+/*width:956px;*/
+width:90%;
+max-width: 956px;
 margin: 20px auto;
-border: 1px solid #000;  
+border: 1px solid #000; 
+background-repeat: repeat-y;
+background-position: center top; 
 }
 
 header.primary, footer.primary{
 /*  width:920px; */
- width:95.833%;
+ width:95.8159%;
+ margin-left: 2.09205%;
+  margin-right: 2.09205%;
  background: rgba(0, 0, 0, 0.4);
  margin: 2.0833%;
  padding: 20px;
@@ -37,8 +43,8 @@ header.primary, footer.primary{
 
 #blog{
 /*   width:638px; */
-  width: 66.4583%;
-  margin-left: 2.0833%;
+  width: 63.1799%;
+  margin-left: 2.09205%;
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   float: left;
@@ -47,8 +53,8 @@ header.primary, footer.primary{
 
 aside {
   background: rgba(0, 0, 0, 0.3);
-  width: 27.2916%;
-  margin-left: 2.0833%;
+  width: 30.5439%;
+  margin-left: 2.09205%;
   padding: 20px;
   float: left;
 }

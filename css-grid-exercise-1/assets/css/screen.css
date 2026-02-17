@@ -22,11 +22,12 @@ html {
 main {
 background-image: url("https://assets.codepen.io/7248/grid-1.png");
 background-size:contain;  
-width:80vw;
+width:100%;
+max-width: 956px;
 margin: 20px auto;
 border: 1px solid #000;  
 display:grid;  
-grid-template-columns: repeat(10, 1fr); 
+grid-template-columns: repeat(9, 1fr); 
 grid-template-rows:auto;  
 gap:20px;  
 padding:20px;  
@@ -35,7 +36,7 @@ padding:20px;
 header.primary{
  background: rgba(0, 0, 0, 0.4);
  grid-column-start: 1;
- grid-column-end: 11;
+ grid-column-end: 10;
  grid-row-start: 1;
  grid-row-end: 2; 
 }
@@ -43,14 +44,14 @@ header.primary{
 footer.primary{
   background: rgba(0, 0, 0, 0.4);
  grid-column-start: 1;
- grid-column-end: 11;
+ grid-column-end: 10;
  grid-row-start:3;
  grid-row-end: 4; 
 }
 
 #content{
  grid-column-start: 1;
- grid-column-end: 11;
+ grid-column-end: 10;
  grid-row-start:2;
  grid-row-end: 3;
  display:grid; 
@@ -62,15 +63,15 @@ footer.primary{
 /*   width:638px; */
   background: rgba(0, 0, 0, 0.6);
  grid-column-start: 1;
- grid-column-end: 8;
+ grid-column-end: 7;
  grid-row-start:1;
  grid-row-end: 2; 
 }
 
 aside {
  background: rgba(0, 0, 0, 0.3);
- grid-column-start: 8;
- grid-column-end: 11;
+ grid-column-start: 7;
+ grid-column-end: 10;
  grid-row-start:1;
  grid-row-end: 2; 
 }
