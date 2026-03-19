@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #f4f1f8;
+  background: linear-gradient(135deg, #2f2733, #433a44 55%, #514656);
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  gap: 24px;
+}
+
+.site-header {
+  grid-area: header;
+  padding: 28px 32px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.course-label {
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d8cdea;
+  margin-bottom: 8px;
+}
+
+.site-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.intro {
+  max-width: 700px;
+  color: #ece6f3;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  align-self: start;
+}
+
+.sidebar h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.nav-list,
+.sub-list {
+  list-style: none;
+}
+
+.nav-list > li {
+  margin-bottom: 12px;
+}
+
+.nav-list a,
+.sub-list a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.nav-list a:hover,
+.sub-list a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(4px);
+}
+
+.nested-title {
+  margin-top: 16px;
+  font-weight: 600;
+  color: #f2ebfa;
+}
+
+.sub-list {
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.sub-list li {
+  margin-bottom: 8px;
+}
+
+.main-content {
+  grid-area: main;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.card p,
+.info-list li {
+  color: #f0ebf5;
+}
+
+.info-list {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main";
+  }
+
+  .site-header h1 {
+    font-size: 2.2rem;
+  }
+}
