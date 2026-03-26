@@ -184,7 +184,34 @@ dd {
 #skills,
 #experience,
 #education {
-  margin-bottom: 36px;
+ margin: 0;
+  padding: 0;
+}
+
+#education h2 {
+  margin: 0 0 16px 0;
+  padding: 0 0 8px 0;
+}
+
+#education .certificate {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#education .certificate h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#education .school {
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+
+#education .date {
+  margin: 6px 0 0 0;
+  padding: 0;
 }
 
 #skills ul {
