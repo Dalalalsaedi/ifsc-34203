@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Image</title>
 </head>
 <body>
-    <img
-  src="assets/img/Strawberry themed girl with pink cat.png"
-  srcset="
-   assets/img/Strawberry themed girl with pink cat.png 480w,
-   assets/img/Strawberry themed girl with pink cat.png 800w,
-   assets/img/Strawberry themed girl with pink cat.png 1200w
-  "
-  sizes="(max-width: 600px) 90vw,
-         (max-width: 900px) 70vw,
-         500px"
-  alt="Watermarked Strawberry Shortcake image">
+
+<img
+    src="assets/img/strawberry_800.png"
+
+    srcset="
+        assets/img/strawberry_480.png 480w,
+        assets/img/strawberry_800.png 800w,
+        assets/img/strawberry_1200.png 1200w
+    "
+
+    sizes="
+        (max-width: 600px) 90vw,
+        (max-width: 900px) 70vw,
+        500px
+    "
+    style="max-width:100%; height:auto;"
+    alt="Strawberry themed girl with pink cat"
+>
+
 </body>
 </html>

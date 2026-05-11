@@ -1,0 +1,134 @@
+body {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-custom {
+  background-color: #2f5d50;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.hero-section,
+.footer-box {
+  background-color: #e5e7eb;
+  border-radius: 6px;
+}
+
+.hero-section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-card {
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+
+.recipe-card img {
+  border-radius: 4px;
+  height: 220px;
+  object-fit: cover;
+  background-color: #d1d5db;
+}
+
+.recipe-card .card-title {
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+
+.newsletter-input {
+  background-color: #d8e8d8;
+  border: none;
+}
+
+.btn-custom {
+  background-color: #2f5d50;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #264c42;
+  color: #ffffff;
+}
+
+.tiktok-link {
+  color: #2f5d50;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contact-info p,
+.tiktok-list p {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #6b7280;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .recipe-card img {
+    height: 180px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+  }
+
+  .recipe-card img {
+    height: 160px;
+  }
+
+  .footer-box {
+    padding: 1.5rem !important;
+  }
+}
